@@ -1,0 +1,11 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',sans-serif;background:#0B0F1A;color:#E5E7EB;overflow-x:hidden;cursor:none}
+@media(hover:none)and(pointer:coarse){body{cursor:auto}}
+::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar-thumb{background:rgba(124,124,255,.4);border-radius:100px}
+::selection{background:rgba(124,124,255,.3);color:#fff}
+@keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.5)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.pulse-dot{animation:pulse-dot 2s ease-in-out infinite}
+.float{animation:float 3.5s ease-in-out infinite}
